@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1"> Click Me !</button>
+</body>
+<script>
+    let value_1=document.getElementById("btn1");
+
+     function click_1(){
+       console.log("Button Is Active...");
+     }
+
+     function click_2(){
+      this.style.backgroundColor="yellow";
+       this.style.color='red';
+     }
+
+
+     value_1.addEventListener("click",click_1);
+     value_1.addEventListener("click",click_2);
+
+    //  value_1.removeEventListener("click",click_1);
+
+</script>
+</html>

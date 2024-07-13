@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cl1{
+      background-color: aqua;
+      color: red;
+    }
+
+    .cl2{
+      border: 1px solid red;
+      padding: 100px;
+    }
+</style>
+<body>
+
+    <div class="cl1 cl2" id="box">
+        <p>This Is Dummy Text !</p>
+    </div>
+
+</body>
+<script>
+    //check class name...
+    let value_1=document.getElementById("box");
+   console.log("class name is...."+value_1.className);  //return class name in box id...
+   console.log("id name is..."+value_1.id);
+
+   //find height - width
+
+   let height_1=value_1.offsetHeight;
+   let width_1=value_1.offsetWidth;
+
+   console.log("height.."+ height_1);
+   console.log("width.."+width_1)
+
+   let height_2=value_1.clientHeight;
+   let width_2=value_1.clientWidth;
+
+   console.log("height..."+height_2);
+   console.log("width..."+width_2);
+
+</script>
+</html>

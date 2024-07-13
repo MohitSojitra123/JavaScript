@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let obj1=new Map();
+
+
+    //map is same to object but object are all key is string(special symbole) and map all key is store in string and other data type
+
+
+    obj1.set("f_name","visharaj");
+    obj1.set("l_name","dave");
+    obj1.set(18,"adult");
+
+    // console.log(obj1);
+    // console.log(obj1.get("f_name"));
+    // console.log(obj1.get("l_name"));
+    // console.log(obj1.get(18));
+
+
+    for(key_all  of obj1.keys()){
+        // console.log(key_all);   // // print all keys..
+        console.log(key_all ,typeof key_all)  
+    }
+
+
+    for([key_1,value_1 ]of obj1){   //obj1 is return in array now array is destructuring 
+        console.log(`index Is.. ${key_1} value Is ${value_1}`);
+    }
+</script>
+</html>

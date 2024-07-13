@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+   function number_of_value_sum(){
+       
+     let total=0;
+    if(arguments == 0){
+      document.write("Please Enter Value")
+    }else{
+        for(let i=0; i<arguments.length; i++){
+           total=total+arguments[i];
+        }
+    }
+    document.write(total);
+   }
+
+   number_of_value_sum(10,20,30,40);
+   document.write("<br>");
+   number_of_value_sum();
+
+</script>
+</html>

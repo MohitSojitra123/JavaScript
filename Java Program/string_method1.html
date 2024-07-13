@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let name="Mohit \n Sojitra";   // \n :== out put next line in Console Screen....
+    document.write(name);
+    console.log(name);
+    console.log("name Length..."+ name.length);
+    console.log(name[2]);
+
+    let name1="Mohit \t Sojitra";  // \t :== Tab...
+    document.write(name1);
+    console.log(name1);
+    
+    let name2="Mohit \" Sojitra";  // out put := Mohit " Sojitra
+    document.write(name2);
+    console.log(name2);
+
+    document.write("<br>") 
+    document.write("-----------------------String Literals...-------------------------------")
+   document.write("<br>");
+
+    let str1="  Mohit";
+    let str2="  V";
+    let str3="  Sojitra"
+
+    // str1.toUpperCase();
+    // str1.toLowerCase();
+    
+
+   document.write(str1.concat(str2 ,  str3))
+
+   //SubString...
+
+   let str4="This Is JavaScript Program....";
+   document.write("<br>");
+   document.write("Sub String...."+str4.substring(8,18));  
+   document.write("<br>");
+   document.write("Sub String..."+str4.substr( 8, 3));  // Second Parameter are used to count 3 number...
+
+
+   //indexof:==
+
+   let str5="That is Applet.That is Fruit. That is Red Fruit...";
+
+   document.write("<br>");
+   document.write(str5.indexOf("Applet"));
+
+   document.write("<br>");
+   document.write(str5.indexOf("is"));
+   document.write("<br>");
+   document.write("--------")
+   document.write(str5.indexOf("is",10));   //Search Start in 10 position next.....
+
+   //lastIndexOf
+   document.write("<br>");
+   document.write(str5.lastIndexOf("Fruit"));
+
+//    document.write("<br>");
+//    let str="javascript is a programming language. That is follow OOP Concept...";
+
+//    let result=str.indexOf("this");
+
+//    if(result == -1){
+//    document.write("String Is Not Present In str Variabel..")
+//    }else{
+//    document.write("String Is Present In str Variable...")
+//    }
+
+
+
+
+// WhiteSpace... (trime)
+
+let str6="This Is C++ Language Program....";
+
+// let new_str=str6.trim(); // trim => remove blank space in start or end...
+// let new_str=str6.trimEnd(); // trimEnd => remove space in only end...
+let new_str=str6.trimStart(); // trimStart => remove space in Start....   
+
+
+document.write("<br>");
+document.write(str6);
+document.write("<br>");
+document.write(new_str);
+
+
+//Replace....
+
+let str7="javascript is a Easy Language....";
+
+document.write("<br>");
+document.write(str7);
+document.write("<br>");
+document.write(str7.replace("Easy","Hard"));
+
+//includes
+
+let str8="javascript is follow in oop(object oriented programming)";
+
+document.write("<br>");
+document.write(str8.includes("oop"));
+document.write("<br>");
+document.write(str8.includes("pop"));
+
+
+</script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+<script>
+  
+     //Round...
+
+    let a=10.5;
+    document.write(Math.round(a))
+    document.write("<br>");
+    let a1=Math.round(12.6);
+    document.write(a1);
+    document.write("<br>");
+
+    let a3=14.1;
+    document.write(Math.ceil(a3));
+    document.write("<br>");
+    let a4=12.6;
+    document.write(Math.floor(a4));
+    document.write("<br>");
+
+    //Remove Point 
+
+    let a5=45.9;
+    document.write(Math.trunc(a5));
+   document.write("<br>");
+
+   //power
+   document.write(Math.pow(4,2));
+   document.write("<br>");
+
+   //squre root
+    document.write(Math.sqrt(100)) 
+    document.write("<br>");
+
+   //min max
+   
+   let find_1=Math.min(10,20,30,2,40,50,60);
+   document.write(find_1);
+   document.write("<br>");
+
+   let find_2=Math.max(10,20,30,40,50,60,70,80,100);
+   document.write(find_2);
+   document.write("<br>");
+
+   //random...
+
+   let a6=Math.random()*100 ;
+   document.write(Math.floor(a6));  //floor are used to remove point number....
+   document.write("<br>");
+
+
+   //set number is Generate in 15 to 25 random...
+
+   let x=Math.floor(Math.random() * (25 - 15)) +15;
+   document.write(x);
+   document.write("<br>");
+   //using function....
+
+   function generate(min,max){
+      let x=Math.floor((Math.random() * (max-min))  +min);
+      return x;
+   }
+
+   document.write(generate(10,15));
+
+</script>
+</html>

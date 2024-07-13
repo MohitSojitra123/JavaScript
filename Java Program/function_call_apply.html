@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+   function sum(a,b){
+    console.log(`a and b  Sum Is ... ${a+b} Student Name Is... ${this.name} Student Std...${this.std}`);
+   }
+
+   stu1_ans={
+    name:"mohit",
+    std:10
+   }
+
+   stu2_ans={
+    name:"rohit",
+    std:12
+   }
+
+   sum.call(stu1_ans,10,20);
+   sum.call(stu2_ans,20,30);
+
+</script>
+<body>
+    
+</body>
+</html>

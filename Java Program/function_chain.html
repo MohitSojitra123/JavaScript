@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function user(username,email,password){
+         this.username=username;
+         this.email=email;
+         this.password=password;
+    }
+    
+
+    user.prototype.print_detail=function(){
+      console.log(`User Name Is..${this.username} Email ${this.email} Password ${this.password}`);
+    }
+
+    user.prototype.encreyptpass= function(){
+        return ` ${this.password}123`;
+    }
+
+    const aaa=new user("abc","abc@gmail.com","abc");
+    console.log(aaa.encreyptpass());
+    aaa.print_detail();
+
+</script>
+</html>

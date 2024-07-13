@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <h1>Traversing.........</h1>
+
+    <ol>
+        <li id="frist123">item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+
+    <ol id="second">
+        <li>item a</li>
+        <li>item b</li>
+        <li>item c</li>
+        <li>item d</li>
+    </ol>
+</body>
+<script>
+
+   //Select Chiled To Prent...
+
+    let value_1=document.getElementById("frist123");
+    let value_2=frist123.parentElement;  //that is select in ol(parent)....
+    console.log(value_2);
+     value_2.innerHTML="Hello123...";
+
+    //Select Prent To Chiled...
+    let value_3=document.getElementById("second");
+    let value_4=value_3.firstElementChild;
+    let value_5=value_3.lastElementChild;
+
+    // let value_6=value_3.children;  //select all childeran
+
+
+
+    console.log(value_4);
+    console.log(value_5);
+    //  console.log(value_6);
+
+    
+
+</script>
+</html>

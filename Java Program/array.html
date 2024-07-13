@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let set_1=new Set([10,20,30]);
+
+    set_1.add("xyz");
+
+    let value_1=[1,2,3,4,5,6,7,8,9,10];
+
+    set_1.add(value_1);
+
+    console.log(set_1);
+
+    console.log(set_1.has(100));  //check value is present in set
+    console.log(set_1.has("xyz"));
+
+
+    let array_1=[10,20,30,40,50,10,20,30,40,50,60,70,80,90,100,60,70,80,90,100];
+    let set_2=new Set(array_1);  //not return in duplicate value...
+    console.log(set_2);
+    
+</script>
+</html>

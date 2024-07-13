@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let obj1=[
+       {pro_id:1,pro_name:"p1",price:12000},
+       {pro_id:2,pro_name:"p2",price:45000},
+       {pro_id:3,pro_name:"p3",price:32000},
+       {pro_id:4,pro_name:"p4",price:90000},
+       {pro_id:5,pro_name:"p5",price:210000}
+    //    {pro_id:5,pro_name:"p5",price:20000}
+
+    ]
+
+    const result=obj1.some((abc)=>{
+        return abc.price > 200000;
+    })
+
+    console.log(result);
+</script>
+</html>

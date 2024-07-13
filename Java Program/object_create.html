@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+   
+    const obj1={
+    k1:"value_1",
+    k2:"value_2",
+    k3:"value_3"
+   }
+
+   const obj2 = Object.create(obj1);  //prototype chaine
+   obj2.k4 = "value_4";
+
+   console.log(obj2.k1);
+   console.log(obj2.k2);
+   console.log(obj2.k3);
+   console.log(obj2.k4);
+
+
+</script>
+</html>

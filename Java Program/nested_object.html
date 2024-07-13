@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let detail={
+        name:"vishal",
+        age:18,
+        city:"Rajkot",
+    //    show:function(){
+    //     console.log(`Name Is...${detail.name} Age Is... ${this.age} City... ${detail.city}`);
+    //    }
+       show(){
+        console.log(`Name Is...${detail.name} Age Is... ${this.age} City... ${detail.city}`);
+       },
+       //Nested Object...
+       personal_detail :{
+          account_number:22330004561,
+          password:123456
+       }
+    }
+
+    detail.show();
+
+    //access Nested Object....
+    console.log("Account Number Is...."+detail.personal_detail.account_number);
+</script>
+</html>

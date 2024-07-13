@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+       obj={
+           fun_1:function(){
+         return (`f_name is ${this.frist_name} l_name is ${this.last_name}`);
+       },
+         is18:function(){
+           return this.age >= 18;
+       }
+       }
+
+       console.log(per_1.is18());
+       console.log(per_1.fun_1());
+    
+
+       function cre_use(f_name,l_name,age,city){
+       const user={};
+       user.frist_name=f_name;
+       user.last_name=l_name;
+       user.age=age;
+       user.city=city;
+       user.fun_1=obj.fun_1;  //pass the reference...
+       user.is18=obj.is18;
+       return user;
+
+    }
+
+    const per_1=cre_use("vimal","bheda",12,"vadiya");
+
+    console.log(per_1);
+
+
+    
+
+</script>
+</html>

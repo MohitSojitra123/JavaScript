@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Map Are return in new array all changes and modification in new array...
+  
+    let array_1=[5,10,15,20,25,30,35,40,45,50];
+
+   let new_array=array_1.map((element,index,array)=>{
+         return `Index Number Is ${index} Value Is  ${element}`; 
+    });
+
+   console.log(new_array);
+
+
+
+   let arr1=[25,36,49,64,81];
+   let arr2=arr1.map((element,index,array)=>{
+           return Math.sqrt(element);
+   });
+   console.log(arr2);
+
+</script>
+</html>

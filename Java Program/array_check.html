@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function find_array(array,check){
+          
+         for(let i=0; i<array.length; i++){
+             
+              if(array[i] === check){
+                    return true;
+                }
+               return false;
+         }
+
+    } 
+
+       arr1=[10,20,30,40,50,60,70,80,90,100];
+
+    console.log(find_array(arr1,101));
+    console.log(find_array(arr1,10));
+</script>
+</html>

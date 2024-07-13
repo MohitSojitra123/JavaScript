@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let person={
+        frist_name:"mohit",
+        last_name:"sojitra",
+        age:19
+    }
+
+    //frist method to access object element....
+
+    document.write("Person Name Is.."+person.frist_name);
+    document.write("<br>");
+    document.write("Person age is..."+person.age);
+    document.write("<br>");
+    document.write(person.city);
+    document.write("<br>");
+
+   // second method to access object element....
+
+   document.write(person['frist_name']);
+   document.write("<br>");
+   document.write(person['age']);
+
+   //update property.....
+
+    person.age=22;    
+    document.write("<br>")
+    document.write("update age.."+person.age);
+ 
+    //new add property.....
+   
+    document.write("<br>"); 
+    person.city ="Rajkot";
+    document.write(person.city);
+
+    // delete property
+
+   delete person.age;
+
+   console.log(person);
+
+   //check property is present in object....
+
+   document.write("<br>")
+   document.write("frist_name" in person);
+   document.write("<br>")
+   document.write("stream" in person);
+
+   //loop print object element....
+
+    for( a in person){
+         console.log(a + "..."+person[a]);
+    }
+
+</script>
+</html>

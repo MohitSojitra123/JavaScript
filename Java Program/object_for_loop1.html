@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    obj123=[
+      {f_name:"mohit",l_name:"sojitra",age:18},
+      {f_name:"Rahul",l_name:"Bhatt",age:18},
+      {f_name:"Keval",l_name:"sojitra",age:18},
+      {f_name:"Vishal",l_name:"Bhimani",age:18},
+    ]
+
+
+    for(let i=0; i<obj123.length; i++){
+        console.log(obj123[i].f_name +" "+ obj123[i].l_name);
+    }
+
+
+
+    student_1={
+        name:'keran',
+        marks:{
+           maths:91,
+           science:86,
+           english:89
+        }
+    }
+
+     let m=student_1.marks.maths;
+     let s=student_1.marks.science;
+     let e=student_1.marks.english;
+
+     console.table([m,s,e]);
+
+     console.log((m+s+e)/3);
+    
+ 
+</script>
+</html>

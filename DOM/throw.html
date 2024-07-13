@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="" name="" id="num">
+    <button onclick="test()">Click</button>
+  <h1 id="res">
+
+  </h1>
+
+</body>
+<script>
+    var num=document.getElementById('num');
+
+    function test(){
+        // alert(num.value);
+       var data=num.value;
+
+       try{
+        if(isNaN(data)){
+            throw "This Is Not A Number";
+        }else{
+            if(data<5 || data>10){
+                throw "Number Is  Correct Range"
+            }else{
+                throw "";
+            }
+        }
+       }catch(erro){    
+          document.getElementById("res").innerText = erro; 
+       }
+    }
+</script>
+</html>

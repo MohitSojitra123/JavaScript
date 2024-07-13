@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let array=[10,20,30,40,50];
+
+    const new_array=array.reduce((accumulator,currentvalue)=>{
+         return  currentvalue+accumulator;
+    })
+
+    console.log(new_array);
+
+
+    //accumulator //currentvalue  //result
+    // 10            20              30
+    // 30            30              60
+    // 60            40              100
+    // 100           50              150
+
+    
+
+</script>
+</html>

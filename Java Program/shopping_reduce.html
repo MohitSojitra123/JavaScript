@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+  const shopping=[
+    {lan:"PHP",price:10000},
+    {lan:"HTML",price:20000},
+    {lan:"CSS",price:10000},
+    {lan:"JS",price:10000},
+  ]
+
+ const abc=shopping.reduce((accu,val)=>{
+   return accu + val.price;
+ },0); 
+
+console.log(abc);
+</script>
+</html>

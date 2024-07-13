@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let array_1=[10,20,30,40,50,60,70,80,90,100];
+    
+    console.log(array_1);
+    console.log(array_1.length);
+    console.log("slice....",array_1.slice(4,7));  //slice method are used to cut array element...
+    array_1.splice(0,2,100,200);   //index , number of updae value ,update value
+    console.log(array_1);
+
+    let array_converter123=array_1.join();  //Join() method is used to convert array type to String 
+    console.log(`Convert Array To String....${array_converter123}`);
+  //--------------------------------------------------------------------------------------------------
+    
+  let array_2=["mohit","rahul","keval","manish","raj","darshan"];
+   
+  console.log(array_2);
+  console.log(array_2.length);
+  console.log(typeof array_2);
+  array_2[0]="tushar";
+  console.log(array_2);
+ 
+  //----------------------------------------------------------------------------------------------
+
+   let array_3=["apple","bat","cat","dog","elephent","fog","gereen","hoursh"];
+
+   console.log(array_3);
+
+   console.log("for.............................");
+   for(let i=0; i<array_3.length; i++){
+    console.log(array_3[i]);
+   }
+
+
+   console.log("while...........................");
+   let a=0;
+   while(a<array_3.length){
+    console.log(array_3[a]);
+    a++;
+   }
+   
+   console.log("do-while...........................")
+   let b=0;
+   do{
+     console.log(array_3[b]);
+      b++;
+   }while(b<array_3.length);
+
+   console.log("map..........................................")
+   let update=array_3.map(function(print){
+      console.log(print);
+   })
+
+   console.log("foreach....................................")
+   array_3.forEach(function(data){
+   console.log(data);
+   })
+
+   //-----------------------------------------------------------------------------------------------
+
+   let nested_array=[10,20,30,[40,50,60],70,[80,90,[100,110]],120,130];
+   console.log(nested_array);
+
+   console.log(nested_array.flat(3));  //flat are used to sperate all nested array in one arry.... parameter pass is [1[]2[3[]]]
+//---------------------------------------------------------------------------------------------------
+
+  let name="mohit";
+  console.log(typeof name);
+  console.log(Array.isArray(name));  //Array.isArray(name) => check array true or false ans....
+  console.log(Array.from(name)); //conver another type to array.....
+
+//-------------------------------------------------------------------------------------------------------
+
+let num1=100;
+let num2=200;
+let num3=300;
+let num4=400;
+let num5=500;
+
+let array_create=Array.of(num1,num2,num3,num4,num5);  //Array of => Array of used to convert multiple variable in array......
+console.log(array_create);
+console.log(typeof array_create)
+console.log(array_create[0]);
+
+//-----------------------------------------------------------------------------------------------------
+
+
+//pop element store another variable
+
+let arr=[100,200,300,400,500,600,700,800,900,1000];
+
+console.log(arr);
+
+let element=arr.pop();
+
+console.log("pop element Is.....",element);
+console.log(arr);
+
+//---------------------------------------------------------------------
+
+</script>
+<body>
+    
+</body>
+</html>

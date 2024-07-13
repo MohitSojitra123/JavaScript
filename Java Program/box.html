@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+    
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+.d123{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+
+
+
+    </style>
+    <div class="d123">
+        <div class="cll1">
+        <div class="box" id="id1"><h1>1</h1></div>    
+        <div class="box" id="id2">2</div>
+        </div>
+
+        <div class="cll2">
+        <div class="box" id="id3">3</div>
+        <div class="box" id="id4">4</div>
+    </div>
+   
+    </div>
+
+</body>
+<script>
+
+let id1=document.getElementById('id1');
+let id2=document.getElementById('id2');
+let id3=document.getElementById('id3');
+let id4=document.getElementById('id4');
+
+
+id1.addEventListener("mouseenter",function(){
+    let ans=Math.floor(Math.random()*100);
+    id1.innerHTML =`<h1>${ans} </h1>`;
+  
+})
+
+id1.addEventListener("mouseleave",function(){
+    id1.innerHTML="<h1>0</h1>"
+})
+
+
+count="red";
+id2.addEventListener("mousemove",function(){
+ 
+    if(count == "red"){
+        id2.style.backgroundColor="red";
+        count="blue";
+    }
+    else{
+     id2.style.backgroundColor="blue";
+     count="red";
+    }
+})
+
+id2.addEventListener("mouseleave",function(){
+    id2.style.backgroundColor="white";
+})
+
+id3.addEventListener("mouseenter",function(){
+
+    let r=Math.floor(Math.random()*256);
+    let g=Math.floor(Math.random()*256);
+    let b=Math.floor(Math.random()*256);
+   
+    console.log(r)
+    console.log(g)
+    console.log(b)
+
+
+    let abc=`rgb(${r},${g},${b})`;
+
+    id3.style.backgroundColor=abc;
+
+})
+
+id3.addEventListener("mouseleave",function(){
+    id3.style.backgroundColor="white";
+})
+
+id4.addEventListener("mouseenter",function(){
+
+    let r=Math.floor(Math.random()*256);
+    let g=Math.floor(Math.random()*256);
+    let b=Math.floor(Math.random()*256);
+
+    id1.style.backgroundColor=`rgb(${r},${g},${b})`;
+    id2.style.backgroundColor=`rgb(${b},${r},${g})`;
+    id3.style.backgroundColor=`rgb(${g},${b},${r})`;
+})
+
+id4.addEventListener("mouseleave",function(){
+    id1.style.backgroundColor="White";
+    id2.style.backgroundColor="white";
+    id3.style.backgroundColor="white";
+})
+
+
+
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #id1{
+        width: 700px;
+        height: 700px;
+        background-color:antiquewhite;
+    }
+
+    #id2{
+        width: 500px;
+        height: 500px;
+        background-color:rgb(47, 129, 102);
+    }
+
+    #id3{
+        width: 200px;
+        height: 200px;
+        background-color:yellow;
+    }
+</style>
+<body>
+    <div id="id1">Grandparent..
+        <div id="id2">Parent..
+            <div id="id3">Child..
+            </div>    
+        </div>
+    </div>
+
+</body>
+<script>
+    let value_1=document.getElementById("id1");
+
+    value_1.addEventListener('click',function(e){
+       console.log(e.target);
+    })
+</script>
+</html>

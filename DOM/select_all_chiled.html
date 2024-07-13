@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id1">
+        <button>btn 1</button>
+        <button>btn 2</button>
+        <button>btn 3</button>
+        <button>btn 4</button>
+    </div>
+
+    <h1 id="h_1">abc</h1>
+
+</body>
+<script>
+     let id1=document.getElementById('id1');
+     let h_1=document.getElementById('h_1');
+
+     let btnall=id1.getElementsByTagName('button');
+
+     console.log(btnall);
+
+     for(let i=0; i<btnall.length; i++){
+        btnall[i].addEventListener('click',function(){
+              h_1.style.backgroundColor="red";
+            // h_1.innerHTML=btnall[i].innerText;
+        })
+     }
+
+</script>
+</html>

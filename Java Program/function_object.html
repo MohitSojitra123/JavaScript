@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+ //Paramter..... Destructuring....
+   student={
+   name:"mohit",
+   study:"BCA sem-4",
+   age:18,
+   }
+
+   const print_object_element=(obj123)=>{  //Any name pass to peramenter....
+     console.log(obj123.name);
+     console.log(obj123.study);
+     console.log(obj123.age);
+   }
+   print_object_element(student);
+
+    print_object_element_second_method=({name,study})=>{   //Perameter same name pass to object structure name
+      console.log(name);
+      console.log(study);
+    }
+
+    print_object_element_second_method(student)
+
+</script>
+<body>
+    
+</body>
+</html>

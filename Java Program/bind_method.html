@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+obj1={
+    name:"Rahul",
+    age:17,
+    show:function(hobby,favMusintion){
+       console.log(`Name Is.. ${this.name} Age Is... ${this.age} hobby Is ${hobby} Fav... Musicition ${favMusintion}`);
+    }
+}
+
+
+obj2={
+    name:"vishal",
+    age:22
+}
+
+let new_fun=obj1.show.bind(obj2,"coading","xyz");
+
+new_fun();
+
+
+</script>
+</html>

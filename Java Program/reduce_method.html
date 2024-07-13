@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+//multidemntional array convert in single array....
+
+    let array_1=[
+        ["Zone:=1","Zone:=2"],
+        ["Zone:=3","Zone:=4"],
+        ["Zone:5","Zone:=6"],
+        ["Zone:=7","Zone:=8"]
+    ];
+
+    let new_array=array_1.reduce((accumu,curent_value)=>{ 
+          return accumu.concat(curent_value);
+    });
+
+    console.log(new_array);
+    
+</script>
+
+</html>

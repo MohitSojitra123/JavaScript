@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+
+// function find_number(array,fi){
+//     for(let i=0; i<array.length; i++)
+//     {
+//       if(array[i] === fi){
+//         console.log("Index is...",i,"Original Value Is...",array[i]);
+//       }
+//     }
+// }
+
+// let number=[1000,2000,3000,4000,5000,6000,7000,8000];
+
+// find_number(number,3000);
+
+// find_number(number,20);
+
+
+//print object element....
+
+stu_1={
+  name:"mohit",
+  study:"BCA",
+  age:18
+}
+
+stu_2={
+  name:"keval",
+  study:"BHMS",
+  age:21
+}
+
+function print_object(obj){
+  console.log(obj.name);
+  console.log(obj.study);
+  console.log(obj.age);
+}
+
+
+print_object(stu_1);
+print_object(stu_2);
+
+
+//rest parameter
+
+function rest_element(...a){
+  sum=0;
+  for(a1 of a){
+       sum=sum+a1;
+  }
+  console.log(sum);
+}
+rest_element(1,2,3,4,5);
+
+
+
+const find=(...x)=>{ 
+  let sum=0;
+  for(let i=0; i<x.length; i++){
+          sum=sum+x[i];
+  }
+ console.log(sum);
+}
+
+find(10,20,30,40,50);
+
+
+//some
+
+let num=[100,200,300,400,500];
+
+num.some((xyz)=>{
+    console.log("Value..",xyz);
+    console.log("Value 10% ",xyz/10);
+})
+
+</script>
+</html>

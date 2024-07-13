@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello H1</h1>
+</body>
+    <script>
+
+    let value_1=document.querySelector('h1');
+    value_1.style.color = "red"
+
+    // setTimeout(()=>{
+    //     value_1.innerHTML="Java Script"
+    // },2000)
+
+    // setTimeout(()=>{
+    //     value_1.innerHTML="Hello H1"
+    // },3000)
+
+    setInterval(()=>{
+        value_1.innerHTML="Java Script"
+    },1000)
+
+    setInterval(()=>{
+        value_1.innerHTML="Hello H1"
+    },2000)
+
+    
+    </script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let r=Math.random()*100;
+        r=Math.round(r);
+        let computer=r;
+        let user=prompt(`Frist Time Guess Number... ${r}`);
+
+      while(user != computer){
+        if(user > computer){
+        user=prompt('Enter Less Number...');
+        }else if(user < computer){
+        user=prompt('Enter  Great Number...');
+        }
+      }
+      console.log('Number Is Correct..');
+         
+       
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

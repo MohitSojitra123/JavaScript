@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let obj={
+        f_name:"keval",
+        s_name:"parmar",
+        age:18,
+        //frist method...
+        print_1:function(){
+       console.log(`Frist Name Is...${this.f_name}, Second Name Is...${this.s_name}`)
+        },
+        //second method
+        print_2(){
+            console.log(`Frist Name Is...${this.f_name}, Second Name Is...${this.s_name}`)
+        }
+    }
+
+    //destructure...
+
+    let {age} = obj;
+
+    console.log(age);
+    console.log(obj.age);
+
+
+    let frist_name = obj.f_name;
+    console.log(frist_name);
+    console.log(obj.f_name);
+
+    obj.print_1();
+    obj.print_2();
+
+    
+</script>
+</html>

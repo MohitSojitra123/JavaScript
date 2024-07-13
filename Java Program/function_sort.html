@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr1=[10,3,55,22,9,100,63,79,35,76,94,2,7,33,7,94,81];
+
+    //Only NUmber Sort Problem..
+
+    console.log(arr1.sort());
+    arr2=arr1.sort((a,b)=>{
+       return a-b;
+    });
+    console.log("Asendeing Order...");
+    console.log(arr2);
+
+    arr3=arr1.sort((a,b)=>{
+        return b-a;
+    })
+    console.log("Deasendeing  Order...");
+    console.log(arr3);
+
+    //charcter sort...
+
+    let char=["a","x","t","b","e","o","r","c","w","d","q","j"];
+
+    console.log(char.sort());
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    stu_1={
+        name:"raj",
+        age:18,
+        show:function(city,pincode){
+            console.log(`name....${this.name} age....${this.age} city...${city} pincode...${pincode}`);
+        }
+
+        //Optional.......
+
+        //show(city,pincode){
+        //     console.log(`name....${this.name} age....${this.age} city...${city} pincode...${pincode}`);
+        // }
+    }
+
+    stu_2={
+        name:"rahul",
+        age:20
+    }
+
+   console.log(`student name is.....${stu_1.name}`);
+   console.log(`student age is......${stu_1.age}`);
+
+   stu_1.show("rajkot",121212);
+   stu_1.show.apply(stu_2,["surat",898989]); 
+   
+  
+
+</script>
+<body>
+    
+</body>
+</html>

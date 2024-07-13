@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let array_1=[100,200,300,400,500];
+
+    //Array Destructuring...
+
+    let [frist,second,thired,fourth]=array_1;
+    
+    console.log(frist);
+    console.log(second);
+    console.log(thired);
+    console.log(fourth);
+    
+    //rest parameter using destructuring...
+
+
+    let array_2=[100,200,300,400,500,600,700,800,900,1000];
+
+    let [one,two,three,four,five, ...all]=array_2;
+    
+    console.log("Rest Destructuring....");
+    console.log(one);
+    console.log(two);
+    console.log(three);
+    console.log(four);
+    console.log(five);
+
+    console.log("all...."+all);
+
+</script>
+</html>

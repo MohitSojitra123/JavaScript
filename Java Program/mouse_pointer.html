@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #id2{
+        background-color: red;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        
+    }
+
+    body{
+        width: 100%;
+        height: 1000px;
+    }
+
+    /* #id1{
+        display: flex;
+       width: 100%;
+       height: 1000px;
+       background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+</style>
+<body>
+    
+     <!-- Parent Element According Movement -->
+    <!-- <div id="id1"> -->
+        <div id="id2">
+
+        </div>
+    <!-- </div> -->
+</body>
+
+<script>
+
+    // Parent Element According Movement
+    // id1=document.getElementById('id1');   
+
+
+
+    bd=document.getElementsByTagName('body')[0];
+    id2=document.getElementById('id2');
+
+
+  
+    bd.addEventListener('mousemove',function(ele){
+           console.log(ele.x,ele.y);
+           id2.style.top=ele.y+"px";
+           id2.style.left=ele.x+"px";
+    })
+
+</script>
+</html>

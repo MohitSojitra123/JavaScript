@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 100px;
+        background-color: beige;
+    }
+
+    #my_div{
+       padding: 50px;
+       background-color: aqua;
+    }
+
+    #btn1{
+        padding: 50px;
+    }
+</style>
+<body>
+    
+   <div id="my_div">
+    <button id="btn1">Click Me !</button>
+   </div>
+
+
+</body>
+<script>
+   
+    //  //event is occured in...
+    //  button
+    //  div
+    //  body
+    //  html
+    //  document
+
+
+     let value_1=document.getElementById("btn1");
+     let value_2=document.getElementById("my_div");
+     document.body.addEventListener("click",body_fun);
+
+     value_1.addEventListener("click",button_fun);
+     value_2.addEventListener("click",div_fun);
+
+     function button_fun(){
+       console.log("Button Event....");
+     }
+
+ //  //  stop the bublling.....(stop the propogation....)
+
+    //  function button_fun(event){
+    //    console.log("Button Event....");
+    //    event.stopPropagation();
+    //  }
+
+     function div_fun(){ 
+      console.log("div Event....");
+     }
+
+     function body_fun(){ 
+     console.log("body Event...");
+     }
+  
+</script>
+</html>

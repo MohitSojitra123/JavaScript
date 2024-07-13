@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+   let key_1="e_mail"; //variable value are used to object key...
+
+   let obj={
+    name:"deep",
+    age:15,
+    city:"Rajkot",
+    hobbies:["guitar","sleeping","listening music"],
+    "lan guage":["English","Gujrati","Hindi"],
+    [key_1]:"m123@gmail.com"  //second method...
+   };
+
+  //  obj['key_1']="mohit123@gmail.com";    //frist method...
+ 
+
+   obj.gender="Male";  //add key and value pair..
+
+   console.log(obj);
+
+   console.log("Type Of Object..."+typeof obj);
+
+   console.log(obj.name); //Frist Method
+   console.log(obj["age"]);  //Second Method
+   
+   console.log(obj.hobbies);
+   console.log(obj["lan guage"]);
+
+   //for in loop
+   console.log("For in...");
+   console.log("For in Loop...");
+   for(abc in obj){
+     console.log(abc,":",obj[abc]);
+   } 
+
+//    for of loop
+    console.log("For Of...");
+    for(aaa of Object.keys(obj)){
+       console.log(obj[aaa]);
+    }
+
+
+   //keys keyword....
+   //print object all key...
+
+   console.log(Object.keys(obj));
+
+   //check array
+    console.log(Array.isArray(obj));
+
+    console.log(Array.isArray((Object.keys(obj))));  //key value is one type array
+</script>
+</html>

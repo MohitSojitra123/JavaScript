@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let array_1=[
+        {user_name:"Keval",age:18},
+        {user_name:"Rahul",age:21},
+        {user_name:"Meet",age:43},
+        {user_name:"Nikhil",age:19}
+    ];
+
+
+    console.log("Using ForEach Loop...");
+    array_1.forEach((obj)=>{
+        console.log(`User Name Is ${obj.user_name} Age Is ${obj.age}`);
+    });
+
+   console.log("Using For of Loop...");
+    for(obj of array_1){
+        console.log(`User Name Is ${obj.user_name} Age Is ${obj.age}`);
+    }
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   
+   obj_value={
+    name:"abc",
+    age:18,
+    city:"ahemdabad",
+    std:"college"
+   }
+
+
+   console.log(obj_value);
+
+   //lendhi method....
+
+   const obj_copy_name=obj_value.name;
+   const obj_copy_age=obj_value.age;
+   const obj_copy_city=obj_value.city;
+   const obj_copy_std=obj_value.std;
+
+
+   console.log("Copy object Value....",obj_copy_name);
+   console.log("Copy object Value....",obj_copy_age);
+   console.log("Copy object Value....",obj_copy_city);
+   console.log("Copy object Value....",obj_copy_std);
+
+   //sort method....
+   const {name:my_name,age,...create_obj}=obj_value;  //name:my_name := change variable name...
+//    console.log(name);
+   console.log(my_name);
+   console.log(age);
+    
+   console.log(create_obj);
+
+</script>
+<body>
+    
+</body>
+</html>

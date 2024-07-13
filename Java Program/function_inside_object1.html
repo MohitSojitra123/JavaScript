@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+   const new_object={
+      keyword:function(){
+        console.log("Keyword are used to....");
+      }
+
+   }
+
+
+
+   function generate_data(fristname,lastname,age,std,address,email){
+        const my_object={};  //create blank object....
+        my_object.fristname=fristname;
+        my_object.lastname=lastname;
+        my_object.age=age;
+        my_object.std=std;
+        my_object.address=address;
+        my_object.email=email;
+        my_object.word=new_object.keyword;   //assign new_object object inside function keyword....
+
+       my_object.print=function(){
+          return(`Frist Name Is ${this.fristname} Last Name Is ${this.lastname} Age Is ${this.age}`);
+       }
+       my_object.check=function(){
+          return  this.age >= 18;
+       }
+     
+       return my_object;   //that is return my_object....
+    }
+
+    
+   //-------------------------------------insert frist user value------------------------------------
+
+    const user_1=generate_data("mohit","sojitra",19,12,"rajkot","mohit123@gmail.com");
+    console.log(user_1);
+
+    // call function
+
+    const fun1=user_1.print();
+    const fun2=user_1.check();
+    
+    console.log(user_1.word());
+    console.log(fun1)
+    console.log(fun2);
+
+    
+
+
+    //------------------------------insert second user value----------------------------------------
+
+    const user_2=generate_data("keval","vora",12,11,"surat","keval123@gmail.com");
+    console.log(user_2);
+
+
+    const method_1=user_2.check();
+    const method_2=user_2.print();
+
+    console.log(method_1);
+    console.log(method_2);
+
+    //-------------------------------------------------------------------------------------------
+
+
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+  setInterval(function(){
+    console.log('Call SetInterval := 1 ');
+    setInterval(function(){
+        console.log("Call SetInterval := 2 ");
+        setInterval(function(){
+            console.log('Call SetInterval := 3');
+            setInterval(function(){
+                console.log("Call SetInterval := 4");
+;            })
+        },4000)
+    },3000)
+  },2000)
+
+</script>
+</html>

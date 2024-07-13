@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+<script>
+    let x=new Date();
+    
+    document.write(x);
+    document.write("<br>");
+
+    let y=new Date(2018,11,15,10,33,56,7);
+      
+    document.write(y);
+    document.write("<br>");
+                                    
+    let z=new Date("October 13,2018 11:12:33");
+
+    document.write(z);
+    document.write("<br>");
+
+    //------------------------------------------------------
+
+    let a=new Date("October 13,2018 11:12:33");
+
+    document.write(a.getTime());
+    document.write("<br>");
+    document.write(a.getFullYear());
+    document.write("<br>");
+    document.write(a.getMonth());
+    document.write("<br>");
+    document.write(a.getDate( ));
+    document.write("<br>");
+    document.write(a.getHours());
+    document.write("<br>");
+    document.write(a.getSeconds());
+    document.write("<br>");
+    document.write(a.getMinutes());
+    document.write("<br>");
+    document.write(a.getDay());
+    document.write("<br>");
+
+    a.setFullYear(2022);
+    document.write(a.getFullYear());
+    a.setMonth(2);
+    document.write(a.getMonth());
+    document.write("<br>");
+
+
+    a.setDate((a.getDate()+ 50)); 
+    document.write(a.getDate());
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+<script>
+
+  // for of loop
+
+  let value1=[400,500,600,700];
+    cal=0; 
+    let i=0;
+
+  for(val of value1)
+  {
+     cal=val/10;
+     value1[i]=val-cal;
+    i++;
+  }
+  console.log(value1);
+
+
+//-----------------------------------------------
+
+ // for loop
+
+
+ let value2=[400,500,600,700];
+
+for(let i=0; i<value2.length; i++){
+           value2[i]=value2[i]-(value2[i]/10);
+           console.log(value2[i]);
+}
+    
+</script>
+</html>

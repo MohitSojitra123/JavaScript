@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <footer></footer>
+</body>
+<script>
+    const heading=document.createElement('h1');
+    const text_1=document.createTextNode("I am Base");
+    const text_2=document.createTextNode("HI,GUYS..");
+    const text_3=document.createTextNode("abc");  
+
+    heading.append(text_2);
+    heading.prepend(text_1);
+
+    document.body.append(heading);
+
+    // document.getElementsByTagName("footer")[0].after(text_1);
+    // document.getElementsByTagName("footer")[0].before(text_2);
+    // console.log(heading);
+
+
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+  const obj1={
+        a:'1',
+        b:'2',
+        c:'3',
+        d:'4'
+    }
+
+   const obj2={
+       x:'5',
+       y:'6',
+       z:'7'
+    }
+
+
+    //key is Not Same Different...s
+    const obj4=Object.assign({},obj1,obj2);
+    const obj3={...obj1, ...obj2};
+
+    console.log(obj4);
+    
+
+    obj123={
+        name:"mohit",
+        city:"rajkot",
+        age:18,
+        contact:88765465434
+    }
+
+    const key_all=Object.keys(obj123);
+    const value_all=Object.values(obj123);
+    const enteries_all=Object.entries(obj123);
+
+    console.log(key_all);
+    console.log(value_all);
+    console.log(enteries_all);
+
+</script>
+</html>

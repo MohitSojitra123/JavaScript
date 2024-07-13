@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //some :=  all condition in flase but any one condition are true result are true....
+        // := all condition are true result is true..... 
+        // := all condition is true but one condition is flase result is true
+        // := all condition is false but one condtion is true result is true
+        // := all condition is flase result is false.....
+
+    
+    let num=[2,4,6,8,107];
+
+    let print=num.some((abc)=>{
+    return abc%2 === 0;
+    })
+    
+    console.log("Frist...")
+    console.log(print);
+    console.log("Frist...");
+    //-----------------------------------------------------------------------------------------
+
+    const shoping=[
+    {pro_id:1,pro_name:"mobile",pro_price:12000},
+    {pro_id:2,pro_name:"TV",pro_price:18000},
+    {pro_id:3,pro_name:"whashing Machine",pro_price:200000},
+    {pro_id:4,pro_name:"laptop",pro_price:40000},
+    {pro_id:5,pro_name:"fan",pro_price:4000},
+    {pro_id:6,pro_name:"computer",pro_price:3000},
+    {pro_id:7,pro_name:"AC",pro_price:300000}  //this condition is true....
+]
+
+   let show=shoping.some((abc)=>{
+       if(abc.pro_price >= 200000){
+        console.log(abc.pro_name);
+       }
+})
+
+    
+</script>
+<body>
+    
+</body>
+</html>

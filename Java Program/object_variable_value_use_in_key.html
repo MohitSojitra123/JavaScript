@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let value_1="my_value_1";
+    let value_2="my_value_2";
+
+    let key_1="obj_key1";
+    let key_2="obj_key2";
+
+      //out put....
+
+    //   obj_key1:my_value_1;
+    //   obj_key2:my_value_2;
+    
+
+    //frist Method
+
+     obj={
+        [key_1]:value_1,
+        [key_2]:value_2
+
+     };
+
+     //second Method..
+
+    //  obj[key_1]=value_1;
+    //  obj[key_2]=value_2;
+
+     for(abc in obj){
+       console.log( abc+" : "+obj[abc]);
+     }
+
+</script>
+</html>

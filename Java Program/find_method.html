@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    let array123=["apple","ball","cat","dog","elephent","grepes"];
+
+     //frist method......
+
+      function search_element(str123){
+           return str123.length === 5; 
+      }
+
+    let print=array123.find((search_element));
+    console.log(print);
+
+      //second method.....
+
+      let show=array123.find((word)=>{
+         return word.length === 3;
+      })
+
+      console.log(show);
+
+      //-----------------------------------------------------------------------------
+
+      const user=[
+        {user_id:1,user_name:"mohit"},
+        {user_id:2,user_name:"rahul"},
+        {user_id:3,user_name:"keval"},
+        {user_id:4,user_name:"vipul"},
+        {user_id:5,user_name:"bharat"},
+        {user_id:6,user_name:"jeet"},        
+      ]
+
+      let search=user.find((abc)=> abc.user_id === 3);
+
+      console.log(search);
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

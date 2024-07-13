@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function print1(username,email,password){
+        this.username=username;
+        this.email=email;
+        this.password=password
+
+      console.log(this.username);
+      console.log(this.email);
+      console.log(this.password);
+    }
+
+    const p_1= new print1("xyz","xyz123@gmail.com","123");
+    const p_2=new print1("abc","abc123@gmail.com","456");
+
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let b=5;
+    let a="10";
+    console.log(typeof a);
+    console.log(a+b);
+
+    //Conversion...
+
+    a=Number(a);  //COnversion Method...
+    console.log(typeof a);
+    console.log(a+b);
+
+    c="120a";
+    console.log(typeof c);
+
+    c=Number(c);  //Convert Number But Value Is NaN...
+    console.log(typeof c);
+    console.log(c);
+
+    let a1=null;
+    let b1=undefined;
+    let c1="";
+
+    a1=Number(a1);
+    b1=Number(b1);
+    c1=Number(c1);
+
+    console.log("Null..."+a1);
+    console.log("undefined..."+b1);
+    console.log(" ''..... "+c1);
+
+    let a2=true;
+    let b2=false;
+    let c2="mohit";
+
+    a2=Number(a2);
+    b2=Number(b2);
+    c2=Number(c2);
+
+    console.log("Boolean...."+a2); 
+    console.log("Boolean..."+b2);
+    console.log("String..."+c2);
+    
+    let a3=1;
+    let b3=0;
+
+    a3=Boolean(a3);
+    b3=Boolean(b3);
+
+    console.log("1 Boolean Conversion..."+a3);
+    console.log("0 Boolean Conversion..."+b3);
+
+let a4=33;
+
+
+a4=String(a4);
+
+
+console.log(a4);
+
+</script>
+</html>

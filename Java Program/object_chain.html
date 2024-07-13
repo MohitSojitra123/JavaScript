@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  
+       obj={
+           fun_1:function(){
+         return (`f_name is ${this.frist_name} l_name is ${this.last_name}`);
+       },
+         is18:function(){
+           return this.age >= 18;
+       },
+       print_data(){
+        console.log("That Is Presonal Data...");
+       }
+       }
+    
+
+       function cre_use(f_name,l_name,age,city){
+       const user=Object.create(obj);  //link to another object
+       user.frist_name=f_name;
+       user.last_name=l_name;
+       user.age=age;
+       user.city=city;
+       user.fun_1=obj.fun_1;  //pass the reference...
+       user.is18=obj.is18;
+       return user;
+
+    }
+
+    const per_1=cre_use("mohit","sojitra","19","vadiya");
+
+    per_1.print_data();  //print_data not availabel in cre_use but you can use and access using object.create...
+
+</script>
+</html>

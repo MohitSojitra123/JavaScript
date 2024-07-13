@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+     body{
+        padding: 100px;
+        background-color:thistle;
+     }
+
+    #my_div{
+        padding: 50px;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div id="my_div">
+        <button id="btn1">Click Me !</button>
+    </div>
+</body>
+<script>
+
+ let value_1=document.getElementById("btn1");
+ let value_2=document.getElementById("my_div");
+
+ document.body.addEventListener("click",body_fun,true);
+//  That Is Called Function 
+//  document.body.addEventListener("click",body_fun(),true);
+ value_1.addEventListener("click",button_fun,true);
+ value_2.addEventListener("click",div_fun,true);
+
+ function body_fun(){
+   console.log("body Event...");
+ }
+
+ function button_fun(){
+   console.log("button Event...");
+ }
+
+ function div_fun(){
+  console.log("div Event...");
+ }
+
+</script>
+</html>

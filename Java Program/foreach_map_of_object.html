@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+   const data=[
+        {name:"mohit",std:12},
+        {name:"raj",std:11},
+        {name:"keval",std:12},
+        {name:"meet",std:10}
+    ]
+
+
+    let new_update=data.map(function(abc){
+        console.log(abc.name +"  "+abc.std);
+    })
+
+    for(array1 of data){
+        console.log(array1.name +" "+ array1.std);
+    }
+  
+   data.forEach(function(update_value){
+     console.log(update_value.name  +" "+ update_value.std);
+   })
+
+
+</script>
+<body>
+    
+</body>
+</html>

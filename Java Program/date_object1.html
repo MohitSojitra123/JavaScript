@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let my_date=new Date();
+
+        console.log(my_date.toString());
+        console.log(my_date.toLocaleString());
+        console.log(my_date.toDateString());
+
+        console.log(typeof my_date);
+
+        let cre_date=new Date(2023,1,23); // 0 =>janu  1=> feb 2=>march ...  
+        console.log(cre_date.toString());
+
+        let cre_date_1=new Date("2022-3-23");  //YYYY-MM-DD Formate
+       console.log(cre_date_1.toString());
+
+
+       //Date Method...
+
+       let date_method =new Date();
+        console.log(date_method.getDate());
+        console.log(date_method.getDay());
+        console.log(date_method.getFullYear());
+        console.log(date_method.getSeconds());
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    let array=[1,2,3,4,5,6,7,8,9,10];
+
+    //frist method......
+
+  console.log("print frist method.....")
+    let print_array1=array.reduce((a,b)=>{
+        console.log("value of index...",a);
+         return a+b;
+    })
+ 
+    console.log("Ans....",print_array1);
+
+    //second method.......
+
+    console.log("print second method......")
+    let print_array2=array.reduce((a,b)=>{
+      console.log("value of index....",a);
+      return a+b;
+    },1)   //index value is start in =: 1
+
+    console.log("Ans....",print_array2);
+
+    //Arrow Function.....
+
+    let print_array3=array.reduce((a,b)=>{
+        console.log("value of index....",a)
+       return a+b;
+    })
+
+    console.log("Ans....",print_array3);
+
+</script>
+<body>
+    
+</body>
+</html>

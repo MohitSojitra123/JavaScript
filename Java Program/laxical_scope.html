@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+</body>
+<script>
+
+let a="Hello guys..";  // Global Scope..
+
+const frist =() =>{
+
+   let b="How Are You !..";
+
+    const second=() =>{
+       let c ="Hii I am Fine Thank You..";
+       console.log(a+b+c);
+    }
+    // console.log(a+b+c);   // I Can't use c variable..
+      second();
+}
+
+frist();
+
+</script>
+</html>

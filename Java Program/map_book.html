@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const book=[
+        {title:'book-1',genre:'Fiction',publish:1987,edition:2010},
+        {title:'book-2',genre:'Science',publish:1980,edition:2011},
+        {title:'book-3',genre:'History',publish:1988,edition:2014},
+        {title:'book-4',genre:'Maths',publish:1990,edition:2012},
+        {title:'book-5',genre:'Science',publish:1981,edition:2015},
+        {title:'book-6',genre:'English',publish:1993,edition:2017},
+        {title:'book-5',genre:'English',publish:1994,edition:2018}
+]
+
+   let ans1=book.filter(function(element){
+        return element.genre==='History';
+   })
+   console.log(ans1);
+
+
+   //second method.......
+
+
+   function find1(array_pass){      //array name pass to autometic featch array object value example of title,genre,publish,edition......
+        return array_pass.genre === 'History';
+   }
+
+   let ans1_1=book.filter((find1));     
+
+   console.log("print using function....");
+   console.log(ans1_1);
+      
+  
+   //--------------------------------------------------------------------------------------------------------------
+   
+   let ans2=book.filter(function(element){
+       return element.publish > 1990 ;
+   })
+
+   console.log(ans2);
+
+
+   //second method......
+
+   function find2(array_pass){
+        return array_pass.publish > 1990;
+   }
+
+   let ans2_2=book.filter((find2));
+
+   console.log("print using function....");
+   console.log(ans2_2);
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+let ans3=book.filter(function(ele){
+   return  (ele.publish >= 1990 && ele.genre === 'English');
+ })  
+
+console.log(ans3);
+
+
+//second method.....
+
+ function find3(array_pass){
+   return array_pass.publish >= 1990 && array_pass.genre === 'English';
+ }
+
+ let and3_3=book.filter((find3));
+
+ console.log("print using function...");
+  console.log(and3_3);
+
+
+</script>
+<body>
+
+    
+</body>
+</html>

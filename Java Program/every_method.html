@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let user=[
+        {productid:1,price:12000},
+        {productid:2,price:10000},
+        {productid:3,price:16000},
+        {productid:4,price:19000},
+        {productid:5,price:18000}
+    ];
+
+    const new_array=user.every((abc)=>{
+         return abc.price < 20000;
+    });
+
+    console.log(new_array);
+
+
+</script>
+</html>

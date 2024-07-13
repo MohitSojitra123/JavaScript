@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const user={
+        name:"meet",
+        age:21,
+        print_1:function(){
+            console.log(`User Name Is... ${this.name} User Age Is...${this.age}`);
+        }
+    }
+
+
+    const value_1=user.print_1;  //function reference pass in variable.... but not pass error
+    value_1();   
+
+</script>
+</html>

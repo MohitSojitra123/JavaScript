@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+  let arr=[1,2,3,4,5];
+
+  function mul(array_value){
+    return array_value*array_value;
+  }
+
+  //frist method...............
+ const print =arr.map(mul);  
+ console.log(print);
+
+
+ //second method.........
+
+   let show=arr.map(function(element123){
+    console.log("For-Each Loop",element123*element123);
+   })
+
+   //thired method....
+
+   let ans=arr.map((ele,index)=>{
+         return `index is ${index} valuse ${ele*ele}`;
+   })
+
+   console.log("thired method....");
+   console.log(ans);
+   
+</script>
+<body>
+    
+</body>
+</html>

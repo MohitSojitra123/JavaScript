@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Mouse Over..</button>
+</body>
+<script>
+    
+    let value=document.getElementById("btn");
+    
+    
+    value.addEventListener('mouseover',function(){
+        console.log("Mouse Over Active...");
+    });
+
+
+    value.addEventListener('mouseleave',function(){
+        console.log("Mouse Leave occured....");
+    });
+
+    
+
+</script>
+</html>

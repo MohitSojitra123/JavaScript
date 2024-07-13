@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function pay(){
+        let v=0;
+        return function(){
+        if(v === 0){
+              console.log("Pay Mony...");
+              v++;
+        }else{
+          console.log("Mony Is Already Pay...");
+          v++;
+        }
+    }
+    }
+
+    let show=pay();
+
+    show();
+    show();
+
+    let print=pay();
+    print();
+    print();
+    
+
+</script>
+</html>

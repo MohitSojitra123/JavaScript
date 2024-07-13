@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+   function calculate(array_element,index){
+      console.log("array index is...",index);
+      console.log(array_element*array_element);
+   }
+
+   let array=[2,3,4,5,6];
+
+   calculate(array[1],1);
+
+   for(let i=0; i<array.length; i++){
+       calculate(array[i],i);
+   }
+
+//---------------------------------------------------------------------
+
+//    For-each loop  ( 1 method)
+   
+    array.forEach(function(ele){
+        console.log("Array element * Array element",ele*ele);
+    })
+
+ //short method....   (2 method)
+ 
+ array.forEach(calculate);  //calculate(array_element,index) parameters is auto metic featch in array.forEach(calculate)  function... 1st  parameter is element  value and 2nd parameters is index of array....
+
+// (3 method)
+
+ array.forEach(function(number,index){
+    console.log("index is....",index,"  value is...",number*number);
+ })
+
+//-----------------------------------------------------------------------------------
+
+  const stu_detail=[
+     {name:"abc",std:10},
+     {name:"def",std:11},
+     {name:"ghi",std:12},
+     {name:"poi",std:12}
+  ]
+
+   stu_detail.forEach(function(frist,second){   //frist variable return:= array element, second variable is return := array index....
+      //  console.log(second);
+      console.log(frist.name)
+   })
+
+
+   //array object element print in map function(most comman use...)
+
+   let new_value=stu_detail.map((abc)=>{
+         return `Student Name Is ${abc.name}`;
+   })
+
+   console.log(new_value);
+
+</script>
+<body>
+    
+</body>
+</html>

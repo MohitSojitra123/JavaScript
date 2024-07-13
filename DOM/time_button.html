@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Time And Date Is...</p>
+    <button onclick="show()">Click Me !</button>
+</body>
+<script>
+    // function show(){
+    //     let t=new Date();
+    //     t.setHours(3);
+    //     document.getElementById("demo").innerHTML=t;
+    // }
+
+
+    (function(){
+        setInterval(()=>{
+            var d =new Date().toLocaleTimeString();
+            document.getElementById("demo").innerHTML=d;
+        },1000)
+    })();
+</script>
+</html>

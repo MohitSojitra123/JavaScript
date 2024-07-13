@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+      //  every := all the codition is true result is true
+             // :=  one condition is flase result is flase... 
+
+    let num1=[2,4,6,8,10,12];
+
+    // let num1=[2,4,6,8,10,13];
+
+    let show=num1.every((abc)=>{
+       return abc%2 === 0;
+    });
+
+    console.log(show);
+      
+//----------------------------------------------------------------------------------------
+
+const shoping=[
+    {pro_id:1,pro_name:"mobile",pro_price:12000},
+    {pro_id:2,pro_name:"TV",pro_price:18000},
+    {pro_id:3,pro_name:"whashing Machine",pro_price:20000},
+    {pro_id:4,pro_name:"laptop",pro_price:40000},
+    {pro_id:5,pro_name:"fan",pro_price:4000},
+    {pro_id:6,pro_name:"computer",pro_price:30000},
+    {pro_id:7,pro_name:"AC",pro_price:60000}
+]
+
+let show1=shoping.every((abc)=>{
+     return abc.pro_price >10000;
+})
+console.log(show1);
+
+let show2=shoping.every((abc)=>{
+    return abc.pro_price < 100000;
+})
+console.log(show2);
+
+</script>
+<body>
+    
+</body>
+</html>

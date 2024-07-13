@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const user_1={
+        u_name:"Vishal",
+        u_age:15,
+        // print(){
+        //  console.log(`User Name Is ${this.u_name} User Age Is ${this.u_age}`);
+        // }
+        print:function(hobby,favMusician){
+               console.log(`User Name Is ${this.u_name} User Age Is ${this.u_age} Hobby ${hobby} fav.. Musician ${favMusician}`);
+        }
+    };
+
+    const user_2={
+        u_name:"Rahul",
+        u_age:43
+    };
+
+    user_1.print.call(user_2,"coading","xyz");
+
+    user_1.print.call(user_2,"coading","xyz");
+
+</script>
+</html> 

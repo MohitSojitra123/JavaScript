@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+   let stu_detail=[
+       {id:1,name:"keval",gender:"male"},
+       {id:2,name:"vimal",gender:"male"},
+       {id:3,name:"rani",gender:"Female"},
+       {id:4,name:"koyal",gender:"Female"} 
+   ]
+
+   console.log(stu_detail);
+
+   for(show of stu_detail){
+         console.log(show.name);
+   }
+
+   for(print_element in stu_detail){
+     console.log(stu_detail[print_element]);
+   }
+
+   //nested destructring Row.....
+
+   const [stu_1,stu_2,stu_3,stu_4]=stu_detail;
+  console.log("Nested Destrucring......")
+   console.log(stu_1);
+   console.log(stu_2);
+   console.log(stu_3);
+   console.log(stu_4);
+
+   // nested  destructring in object 
+   const [{id:Roll_number},{name},{gender}]=stu_detail;   //id:Roll_number := change variable name
+   console.log(Roll_number);  
+   console.log(name);
+   console.log(gender);
+
+
+    const number123=new Array(20,40,10,50,60,30,70,90,80);
+
+    console.log(number123);
+    const abc=number123.sort();
+    console.log(abc);
+
+
+    const num1={
+        a:100,
+        b:200,
+        c:300,
+        d:400
+    }
+
+    console.log("For in Loop.........")
+    for(print in num1){
+        console.log(num1[print]);
+    }
+
+    console.log("For of Loop..........")
+    for(show of Object.keys(num1)){
+            console.log(num1[show]);
+    }
+
+    console.log("Foreach Loop.......")
+     
+    Object.keys(num1).forEach((ele)=>{
+          console.log(num1[ele]);
+    })
+
+</script>
+<body>
+    
+</body>
+</html>

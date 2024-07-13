@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   
+   Detail={
+    name:"mohit",
+    age:18,
+    study:"BCA sem-4",
+    Village:"Vadiya"
+   }
+
+   console.log(Detail);
+
+   console.log(Detail.name);
+   console.log(Detail.age);
+   
+
+   //object print using function and pass parameter....
+
+   function print({name,age,Village}){
+       console.log("name is....",name);
+       console.log(`age is....${age}`);
+       console.log(`Village is...${Village}`);
+   }
+
+   print(Detail);
+
+   //------------------------------------------------------------------------------------
+
+   stu_detail={
+        name:"mohit",
+        age:18
+    }
+
+    for(const print1 in stu_detail)
+    {
+           console.log(stu_detail[print1]);
+    }
+
+    //---------------------------------------------------------------------------------------
+
+    detail={
+        js:"JavaScript",
+        py:"paython",
+        cpp:"c++",
+        rb:"Ruby"
+    }
+   console.log("1111111111111111111111111111111111")
+    for (const printing in detail) {
+         console.log(`${printing} short cut of ${detail[printing]}`);
+    }
+
+   //--------------------------------------------------------------------------------------------
+
+   //for in loop using print array element....
+
+   array_1=['A' ,'B' ,'C', 'D' ,'E' ,'F'];
+    
+   for (const show in array_1) {
+      console.log(array_1[show]);
+   }
+
+//    //easy to use for of loop (array)
+
+//    for(show of array_1)
+//    {
+//     console.log(show);
+//    }
+
+   //-----------------------------------------------------------------------------
+
+   stu_detail={
+    name:"mohit",
+    std:12,
+    age:16,
+    city:"surat"
+}
+
+for(print of Object.keys(stu_detail)){
+    console.log(print," ",stu_detail[print]);
+}
+
+
+for(show in stu_detail){
+    console.log(show ," ",stu_detail[show]);
+} 
+
+//--------------------------------------------------------------------------------
+</script>
+<body>
+    
+</body>
+</html>

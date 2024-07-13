@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+
+ //Declare....
+
+ let array_1=["Math","Physics","Science","Bio","Computer"];
+ let array_2=new Array("Math","Physics","Science","Bio","Computer");
+
+
+document.write(array_1[1])
+document.write("<br>");
+document.write(array_1)
+document.write("<br>");
+document.write(array_2[1]);
+document.write("<br>");
+
+//update Value....
+
+array_1.splice(0,1,"Mathamatics");
+document.write(array_1[0]);
+document.write("<br>");
+document.write(array_1);
+ 
+//update Value...
+
+array_2[1]="English";
+document.write("<br>");
+document.write(array_2[1]);
+document.write("<br>");
+document.write(array_2);
+
+document.write("<br>");
+
+let array_3=[11,12,13,14,15,16,17,18,19,20];
+
+for(let i=0; i<array_3.length; i++){
+    document.write(array_3[i]);
+    document.write(" ");
+}
+
+document.write("<br>");
+document.write("Second Method....");
+document.write("<br>");
+
+for(let j of array_3){
+   document.write(j);
+   document.write(" ");   
+}
+
+
+
+</script>
+</html>

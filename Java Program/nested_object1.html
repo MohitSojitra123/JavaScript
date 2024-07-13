@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    var user={
+        user_id:125678900087,
+        name:"xyz",
+      personal_information:{  //nested object
+        e_mail:"abc@gmail.com",
+        gender:"male",
+        contact:{    //nested object
+            city:"Rajkot",
+            mobile_number:2345678909
+        }
+      }
+    }
+
+    // find body tag chiled node:== body.hasChildNodes
+
+    console.log(user);
+    console.log(user.personal_information);
+    console.log(user.personal_information.contact);
+
+    console.log(user.name);
+    console.log(user.personal_information.e_mail);
+    console.log(user.personal_information.contact.city);
+
+</script>
+</html>

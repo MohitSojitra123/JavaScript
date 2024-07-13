@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const number=[2,4,6,8,10];
+
+    let find = ((value)=>{
+       return value*value;
+    });
+
+    let squer_array=number.map(find);  //map function all operation value are store in new array you can campulcari return... function pass..
+
+    console.log(squer_array);
+
+
+    //Second Method...
+    
+    let squrearray=number.map((value,index)=>{  //value :== pass in array all element in one by one...
+        return value*value;                     //index :== return index all element in one by one....
+    })
+
+   console.log(squrearray);
+   
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let num=[30,10,60,20,40,70,100,80,90,50];
+    num.sort();
+    console.log(num);
+
+    
+    const word=["a","c","aa","e","b","d","f","g","A","AA","h","j","k"];
+     word.sort();
+    console.log(word);
+
+     //Sorting....
+
+     let array=[200,100,400,300,600,500,800,700,1000,900];
+
+     array.sort((a,b)=>{
+        return a-b;
+     })
+     console.log(array);
+
+     //shoping condition 1)high to low...............
+                        //  2) low to high..............
+                        
+      const shoping=[
+        {pro_id:1,pro_name:"A",prince:2999},
+        {pro_id:2,pro_name:"B",prince:4999},
+        {pro_id:3,pro_name:"C",prince:999},
+        {pro_id:4,pro_name:"D",prince:99},
+        {pro_id:5,pro_name:"E",prince:1999},
+        {pro_id:6,pro_name:"F",prince:8999}
+      ]                  
+
+
+      let low_to_high=shoping.slice(0).sort((a,b)=>{
+          return a.prince-b.prince;
+      })
+      console.log("low to high......");
+      console.log(low_to_high);
+
+
+     let high_to_low=shoping.slice(0).sort((a,b)=>{
+        return b.prince-a.prince;
+     })
+    console.log("high to low......"); 
+    console.log(high_to_low);
+       
+
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let usercart=
+    [
+       {productid:1,productname:"mobile",prince:12000},
+       {productid:2,productname:"laptop",prince:22000},
+       {productid:3,productname:"tv",prince:15000}
+    ];
+
+    let new_value=usercart.reduce((accumulator,currentprice)=>{
+        return  accumulator+currentprice.prince; 
+    },0)
+
+   console.log(new_value);
+
+//    accumulator  currentprince total
+//    0            12000       12000
+//    12000        22000        34000
+//    34000        15000        49000 
+
+
+</script>
+</html>

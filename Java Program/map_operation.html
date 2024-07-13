@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   
+   let num1=[1,2,3,4,5,6,7,8,9,10];
+
+   let print1=num1.map((element123)=>{
+          console.log(element123+10);
+   })
+
+   console.log(print1);
+
+
+   //second method to create function....
+
+  //  call back function
+   function add(array_pass){
+     return array_pass+10;
+   }
+
+  
+   let print2=num1.map(add);
+   console.log(print2);
+
+   //    foreach 
+   num1.forEach(function (ele){
+    console.log("Plush(10)  Array Element Is",ele+10);
+    })
+   //--------------------------------------------------------------
+</script>
+<body>
+    
+</body>
+</html>

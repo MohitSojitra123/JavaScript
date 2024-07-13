@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+      
+    function sum(a,b){
+        console.log("a and b total is....",a+b);
+    }
+
+     function call_back(a,b,sum){
+          sum(a, b);
+    }
+
+    call_back(10,20,sum);
+
+
+    //nested asynchonus.....
+
+
+    function get_data(password){
+        setTimeout(()=>{
+            console.log("password is",password);
+        },5000)
+    }
+   get_data(99099123);
+   get_data(9902345);
+
+
+   // data 1 //data 2 //data 3
+
+
+    function data_1(d1){
+       setTimeout(()=>{
+        console.log("data := 1",data)
+       },4000)
+    }
+
+
+</script>
+<body>
+    
+</body>
+</html>

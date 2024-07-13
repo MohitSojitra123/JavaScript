@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   
+   let num=[10,20,30,40,50,60,70,80,90,100];
+
+   //frist method....
+
+   let operation1=num.filter((abc)=>{
+      return abc >=40;
+   })
+   console.log(operation1);
+
+   //second method......
+
+   function  find(pass_array){
+      return pass_array >=40;
+   }
+
+   let operation2=num.filter(find);
+
+   console.log(operation2);
+
+   //-------------------------------------------------
+
+   const abcd=[];
+
+   num.forEach(function(element){
+     if(element > 40){
+        abcd.push(element);
+     }
+    })  
+
+    console.log(abcd);
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

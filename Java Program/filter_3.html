@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+      
+      let number=[1,2,3,4,5,6];
+
+      function find(array_pass){
+       return array_pass%2===0;
+      }
+
+let show=number.filter(find);
+  console.log(show);
+
+  //second method....
+
+  let print=number.filter((pass_array)=>{
+        return pass_array%2===0;
+  })
+
+  console.log(print);
+
+</script>
+<body>
+    
+</body>
+</html>

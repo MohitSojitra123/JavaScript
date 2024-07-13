@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#frist{
+    background-color: blueviolet;
+    height: 150px;
+    width: 180px;
+}
+
+#second{
+    background-color: aquamarine;
+    height: 150px;
+    width: 180px;
+}
+
+#third{
+    background-color:yellow;
+    height: 150px;
+    width: 180px;
+}
+
+#fouth{
+  background-color: wheat;
+  height: 150px;
+  width: 180px;
+
+}
+</style>
+<body>
+    
+    <div id="frist" oncontextmenu="fun_1()"><h1>Right Click Event...</h1></div>
+    <br>
+    <div id="second" ondblclick="fun_2()" ><h1>Double Click Event...</h1></div>
+    <br>
+    <div id="third" onmousedown="fun_3()"><h1>Mouse Down Event...</h1></div>
+    <br>
+    <div id="fouth" onmouseup="fun_4()"><h1>Mouse Up Event....</h1></div>
+    <br>
+</body>
+<script>
+
+function fun_1(){
+    alert("Right Clicked Event....")
+}
+
+function fun_2(){
+    alert("Double Clicked Event....")
+}
+
+function fun_3(){
+   alert("Mouse Down Event...");
+}
+
+function fun_4(){
+ alert("Mouse Up Event...");
+}
+</script>
+</html>

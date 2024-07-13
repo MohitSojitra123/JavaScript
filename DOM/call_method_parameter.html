@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     
+     stu_1={
+        name:"meet",
+        std:10,
+        print:function(pincode,age){
+            console.log(`Student Name Is... ${this.name} Student Std Is...${this.std} age.. ${age} pincode.... ${pincode}`);
+        }
+     }
+
+     stu_2={
+        name:"Jeet",
+        std:12
+     }
+
+
+     stu_1.print(365480,18);
+     stu_1.print.call(stu_2,111111,19);
+
+</script>
+<body>
+    
+</body>
+</html>

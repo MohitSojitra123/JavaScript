@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     
+   //Start delete insert(update)
+
+     let array=["item_1","item_2","item_3","item_4","item_5","item_60","item_61","item_6","item_7","item_8","item_9","item_10"];
+
+     //delete := start index number  // number of delete element
+
+     let delete_item=array.splice(1,4);
+     console.log(array);
+     console.log("Delete Item Is....",delete_item)
+
+     //inset item := start index number // number of delete item // insert value (update value)
+
+     let update_value=array.splice(1,0,"insert item..");
+     console.log(array);
+     console.log("Insert Item...",update_value);
+
+// inser(update) or delet := start index  // number of delete value // insert value (update value)
+  
+let inser_update=array.splice(2,2,"item_5.1","item_5.2");
+console.log(array);
+
+</script>
+<body>
+    
+</body>
+</html>

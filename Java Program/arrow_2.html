@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+// arrow function...  
+const print = () =>
+{
+    console.log("Hello World....");
+}
+print();
+//-------------------------------------------------------------
+
+const sum=(a,b) => {
+  return a+b;
+}
+console.log(sum(10,20));
+//-------------------------------------------------------------  
+
+const check_even=(number) =>{
+  return number % 2 === 0;
+}
+console.log(check_even(11));
+
+//--------------------------------------------------------------
+
+const pice=(enter_string) => {
+  return enter_string[2];
+}
+console.log(pice("mohit"));
+
+//-------------------------------------------------------------------
+
+//Find Character....
+
+const search=(array_name,find) =>{
+    for(let i=0; i<array_name.length; i++){
+            if(array_name[i] === find){
+                return i;
+            }
+    }
+}
+let array=[10,20,30,40,50,60,70,80,90,100];
+console.log(search(array,30));
+
+
+</script>
+<body>
+    
+</body>
+</html>

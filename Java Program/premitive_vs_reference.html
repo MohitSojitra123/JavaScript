@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+  
+
+  //reference VS premetive....
+
+  //premetive Data type:-
+
+  let number1=10;
+  let number2=number1;
+
+  console.log(number1);
+  console.log(number2);
+  number1++;
+
+  
+  console.log("after Increment....");
+  console.log(number1);
+  console.log(number2);
+
+
+  //Reference Data type:-
+
+  let array=[100,200,300,400,500];
+  let new_array=array;
+
+  console.log(array);
+  console.log(new_array);
+ 
+  array[0]=10000;
+
+  console.log("after....");
+  console.log(array);
+  console.log(new_array);
+
+  console.log("Check Array is Equal....");
+  console.log(array===new_array);   
+  
+  //------------------------------------------------------------------------
+
+  //one arraay copy another array with out reference....
+
+  let num1=[9,8,7,6,5,4,3,2,1,0];
+
+
+//  let num2=num1.slice(0);  //0 => index....
+
+
+//  let num2=[].concat(num1); 
+
+    let num2=[...num1];  //speread operator...
+    console.log(num2);
+
+  //-----------------------------------------------------------
+  
+   //one array and another array.....
+
+   let value=[10,20,30,40,50];
+
+ //let new_value=[].concat(value);    ////one array concate direact another array...........
+
+  // let new_value=[...value].concat(60,70,80,90,100);
+
+  //  console.log("new value",new_value);
+
+   let update123_value=new_value.splice(0).concat(110,120,130,140);
+
+  //  console.log("update123 value",update123_value);
+
+  //-------------------------------------------------------------------------- 
+
+     
+
+</script>
+<body>
+
+    
+</body>
+</html>

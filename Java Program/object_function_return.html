@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function cre_use(f_name,l_name,age,city){
+       const user={};
+       user.frist_name=f_name;
+       user.last_name=l_name;
+       user.age=age;
+       user.city=city;
+
+       user.fun_1=function(){
+         return (`f_name is ${this.frist_name} l_name is ${this.last_name}`);
+       }
+
+
+       user.is18=()=>{
+           return this.age >= 18;
+       }
+       return user;
+    }
+
+    const persone_1=cre_use("keval","ramani","18","surat");
+
+    console.log(persone_1);
+
+
+    console.log(persone_1.is18())
+    console.log(persone_1.fun_1())
+
+
+
+</script>
+</html>

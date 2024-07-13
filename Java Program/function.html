@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+     function print_age(){
+        console.log(`Your Age Is... ${age}`);
+     }
+
+     let age=10;
+     print_age();
+     age=20;
+    print_age(); 
+    
+    function sum(a,b){
+     let ans=a+b;
+     return ans;
+    }
+
+ console.log(sum(10,20));
+ let print_ans=sum(1,1);
+ console.log(print_ans);
+
+// arrow function is a part of morden java script...
+ const multi=(a,b) => {
+    let c=a*b;    
+    return c;
+ };
+ console.log(multi(10,20));
+
+
+ //Find the Vowel Number...
+ 
+ function find_vowel(str){
+     let count=0;
+ for(let a of str ){
+    if(a ==='a' || a==='e' || a==='i' || a === 'o' || a==='u' || a=== 'n'){
+         count++;
+    }
+ }
+ console.log(count);
+ }
+ find_vowel('applei');  
+ 
+ 
+ //second method using arrow method
+
+ let find_vowel1=(str) =>{
+    count=0;
+      for(let b of str){
+        if(b==='a' || b === 'e' || b === 'i' || b === 'o' || b === 'u' || b === 'n'){
+            count++;
+        }
+      }
+      console.log(count);
+ };
+find_vowel1('mohitu');
+
+</script>
+</html>

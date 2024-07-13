@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let name=["vinod","rahul","keval","ramesh","piyush","vishal"];
+
+    console.log(name[name.length -1]);
+
+    //for in loop  =>> in are return in Index Number...
+    console.log("For In Loop...");
+    for(nm in name){
+      console.log(` Index Is ${nm} ${name[nm]}`);
+    }
+
+    //for of
+
+    console.log("For Of Loop...");
+    for(nm of name){
+        console.log(nm);
+    }
+
+    //for each Loop...
+
+    console.log("For Each Loop...");
+
+    name.forEach(function(ele,index_123,name_of_arrar){
+           console.log(`Index Number Is ${index_123} and Element Is ${ele}`);
+        // console.log(name_of_arrar)
+    })
+
+
+    //for each using arrow function....
+
+    console.log("For Each Loop Using Arrow Function..");
+    name.forEach((ele,index_123,name_of_arrar)=>{
+        console.log(`Index Number Is ${index_123} and Element Is ${ele}`);
+    })
+
+
+</script>
+</html>

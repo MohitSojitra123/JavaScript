@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    detail=[
+        {title:"Book One", genre:"Non-Fiction",publish:1992},
+        {title:"Book Two", genre:"History",publish:1999},
+        {title:"Book Three", genre:"Non=Fiction",publish:1989},
+        {title:"Book Four", genre:"Science",publish:2009},
+        {title:"Book Five", genre:"Fiction",publish:1987},
+        {title:"Book Six", genre:"History",publish:2011},
+        {title:"Book Seven", genre:"Science",publish:1981},
+        {title:"Book Nine", genre:"Non-Fiction",publish:1989}  
+    ];
+
+   const abc=detail.filter((all)=>{
+           return all.genre === "History";
+    });
+   
+    console.log(abc);
+
+    const xyz=detail.filter((all)=>{
+     return all.publish >=2000 && all.genre === "Science";
+    })
+
+    console.log(xyz);
+
+
+
+</script>
+</html>

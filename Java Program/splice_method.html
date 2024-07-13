@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+   let month=['jan','march','april','june','july'];
+
+//    splice method use to add element... 
+   month.splice(month.length,0,"Dec");
+
+//replcae and update element... 
+  let check=month.indexOf("march");
+
+  if(check != -1){   //check element is not present in Array array is return in -1....
+    month.splice(1,1,"March");
+  }else{
+    console.log("Data Is Not A Present In The Array...");
+  }
+
+ //delete June...
+month.splice(3,1);
+
+//delete all element...
+
+let delete_ele=month.splice(3,Infinity);  // index number 3 to all Array element in Delete...and store in new variable...
+console.log(delete_ele);  //delete all element is Store in this variable....
+
+
+   console.log(month);
+
+</script>
+</html>

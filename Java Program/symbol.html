@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // primitive :==
+    //    String Number Boolean null undefined symbol BigInt 
+
+    // Non Primitive(Reference Type):==
+    
+    // object Array Functions 
+
+    const a=Symbol('123');  //Symbol value is same but different compare value Ans is value Different... 
+    const b=Symbol('123');
+
+    if(a ===  b){
+        console.log("true");
+    }
+    else{
+        console.log("false");
+    }
+
+
+    const big_int=12323234234345n;
+
+    console.log(typeof big_int);
+       
+     //Function Are Store In Variable....
+     
+     let print=function(){
+        console.log("That Is Normal Syntax...");
+     }
+
+     console.log(print);  //print full function...  //pass function reference
+     print();   //print variable is automatic convert in to function
+     
+</script>
+</html>

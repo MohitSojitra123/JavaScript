@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+   const user=[
+    {userid:1,username:"keval"},
+    {userid:2,username:"Rahul"},
+    {userid:3,username:"Vishal"},
+    {userid:4,username:"Deep"}
+   ];
+
+     //Frist Method...
+     function check(xyz){
+       return xyz.userid === 3;
+     }
+
+     let result =user.find(check);
+       console.log(result); 
+
+
+     //Second Method...
+      let new_result=user.find((abc)=>{
+        return abc.userid === 3;
+      });
+      console.log(new_result);
+
+
+</script>
+</html>

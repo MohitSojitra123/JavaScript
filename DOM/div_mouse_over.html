@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+    margin: 0px;  /*margin are used to set div size in to body gap in 0px */
+  }
+
+  #abc{
+     width: 500px;
+     height: 500px;
+     background-color: blanchedalmond;
+     border-radius: 30px;
+     border: 2px black dotted;
+  }
+
+  #abc:hover{
+    background-color: aquamarine;
+  }
+</style>
+<body>
+    <div id="abc"></div>
+</body>
+<script>
+   let value_1=document.getElementById("abc");
+   value_1.addEventListener("mouseover",function(){
+    console.log("Mouse Is Active...");
+   })
+</script>
+</html>

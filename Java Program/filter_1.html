@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    // let array1=[1,3,5,7,9,0,2,4,6,8,0]
+
+    // new_array=array1.map(function(ele){
+    //     if(ele % 2 == 0){
+    //         return true;
+    //     }
+    //     else{
+    //         return false;
+    //     }
+    // })
+
+
+    // console.log(new_array);
+
+
+
+console.log("Using Call Back...")
+
+    function fun(ele){
+        if(ele % 2 == 0){
+             return true;
+        }else{
+            return false;
+        }
+    }
+
+    let arr1=[1,3,2,4,6,5,7,9,8,0]
+
+    brr=arr1.filter(fun);
+
+    console.log(brr);
+
+</script>
+<body>
+    
+</body>
+</html>

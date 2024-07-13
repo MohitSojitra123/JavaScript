@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   let fun1= function(){
+        console.log("Function 1 Start");
+        function fun2(){
+         console.log("Function 2 Start");
+        }
+        return fun2();
+    }
+
+    console.log(fun1);  //this is only print (pre) tag
+    console.log(fun1());  //this is call function
+
+</script>
+<body>
+</body>
+</html>

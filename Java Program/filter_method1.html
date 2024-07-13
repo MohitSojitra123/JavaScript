@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let array_1=[1,2,3,4,5,6,7,8,9,10];
+
+    new_arr= array_1.filter((val,index)=>{
+         return  val >= 5;
+     })  
+     
+     console.log(new_arr);
+
+
+     //for each...
+     let arr123=[];
+     array_1.forEach((arr)=>{
+        if(arr >= 5){
+            arr123.push(arr);
+        }
+     })
+
+     console.log("arr123...");
+     console.log(arr123);
+
+</script>
+</html>
